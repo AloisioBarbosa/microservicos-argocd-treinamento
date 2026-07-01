@@ -7,9 +7,9 @@ APP_DIR="${SCRIPT_DIR}/bmi-calculator"
 
 DEFAULT_REGISTRY="docker"
 DEFAULT_TAG="latest"
-DEFAULT_DOCKER_USERNAME=""
-DEFAULT_AWS_REGION="us-west-2"
-DEFAULT_AWS_ACCOUNT_ID=""
+DEFAULT_DOCKER_USERNAME="aloisiob"
+DEFAULT_AWS_REGION="us-east-1"
+DEFAULT_AWS_ACCOUNT_ID="920278691034"
 
 usage() {
     cat << EOF
@@ -22,7 +22,7 @@ OPTIONS:
     -u, --username USERNAME     Docker Hub username (required for docker registry)
     -t, --tag TAG              Image tag [default: latest]
     -a, --account-id ACCOUNT_ID AWS Account ID (required for ecr registry)
-    -R, --region REGION        AWS Region [default: us-west-2]
+    -R, --region REGION        AWS Region [default: us-east-1]
     -p, --push                 Push images to registry (default: build only)
     -h, --help                 Show this help message
 
